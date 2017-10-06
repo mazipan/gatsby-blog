@@ -59,7 +59,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       ).then(result => {
         if (result.errors) {
           /* eslint no-console: "off"*/
-          console.log(result.errors);
+          console.log('create page error : ', result.errors);
           reject(result.errors);
         }
 
@@ -111,8 +111,14 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   });
 };
 
+
 exports.modifyWebpackConfig = ({ config, stage }) => {
-  if (stage === "build-javascript") {
+  if (stage === 'build-html') {
+    config.loader('null', {
+      test: /bad-module/,
+      loader: 'null-loader'
+    })
+  } else if (stage === "build-javascript") {
     config.plugin("Lodash", webpackLodashPlugin, null);
   }
-};
+}
