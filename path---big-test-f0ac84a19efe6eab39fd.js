@@ -1,0 +1,2 @@
+webpackJsonp([0xd4f2c1887bbe],{"./node_modules/json-loader/index.js!./.cache/json/big-test.json":function(e,o){e.exports={pathContext:{slug:"/big-test"}}}});
+//# sourceMappingURL=path---big-test-f0ac84a19efe6eab39fd.js.map

@@ -1,0 +1,2 @@
+webpackJsonp([0x5f99141bd9df],{"./node_modules/json-loader/index.js!./.cache/json/bold-mage.json":function(o,e){o.exports={pathContext:{slug:"/bold-mage"}}}});
+//# sourceMappingURL=path---bold-mage-caede64dce90be655514.js.map
